@@ -1,0 +1,36 @@
+{XML_HEADER}
+
+<forums>
+<!-- BEGIN forumrow -->
+  <!-- IF forumrow.S_IS_CAT -->
+    <category id="{forumrow.FORUM_ID}">
+      <id>{forumrow.FORUM_ID}</id>
+      <name>{forumrow.FORUM_NAME}</name>
+      <link>{forumrow.U_VIEWFORUM}</link>
+    </category>
+  
+  <!-- ELSEIF forumrow.S_IS_LINK -->
+  
+  <!-- ELSE -->
+    <forum id="{forumrow.FORUM_ID}">
+      <id>{forumrow.FORUM_ID}</id>
+      <name>{forumrow.FORUM_NAME}</name>
+      <link>{forumrow.U_VIEWFORUM}</link>
+      <!-- IF forumrow.LAST_POST_TIME -->
+        
+        <last_post>
+          <link>{forumrow.U_LAST_POST}</link> 
+          <title>{forumrow.LAST_POST_SUBJECT}</title>
+          <short_title>{forumrow.LAST_POST_SHORTENED_SUBJECT}</short_title>
+          <time>{forumrow.LAST_POST_TIME}</time>
+          <last_poster>{forumrow.LAST_POSTER}</last_poster>
+        </last_post>
+      <!-- ELSE -->
+        <!-- {L_NO_POSTS} -->
+      <!-- ENDIF -->
+      
+      
+    </forum>
+  <!-- ENDIF -->
+<!-- END forumrow -->
+</forums>
