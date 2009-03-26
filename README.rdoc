@@ -1,0 +1,22 @@
+= PhpBB3 Webservices
+
+A phpbb3 drop-in addon for decent modern webservice access to phpbb3 data in XML and JSON formats.
+
+== Installation
+
+Put it in a subdirectory of your phpbb3 installation and name it something like webservice.
+
+== Usage
+
+http://your_forum/webservice/index.xml.php
+
+(Currently only this one is supported)
+
+== Features
+
+* Using whole phpbb3 backend (together with logged user's access and authorization)
+* Aiming for RESTful (or at least similar) paths
+
+== TODO
+
+Too much to list it all.
