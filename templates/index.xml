@@ -19,11 +19,15 @@
       <!-- IF forumrow.LAST_POST_TIME -->
         
         <last_post>
+          <id>{forumrow.LAST_POST_ID}</id>
           <link>{forumrow.U_LAST_POST}</link> 
           <title>{forumrow.LAST_POST_SUBJECT}</title>
           <short_title>{forumrow.LAST_POST_SHORTENED_SUBJECT}</short_title>
           <time>{forumrow.LAST_POST_TIME}</time>
-          <last_poster>{forumrow.LAST_POSTER}</last_poster>
+          <last_poster>
+            <id>{forumrow.LAST_POSTER_ID}</id>
+            <login>{forumrow.LAST_POSTER}</login>
+          </last_poster>
         </last_post>
       <!-- ELSE -->
         <!-- {L_NO_POSTS} -->
