@@ -9,13 +9,15 @@ Put it in a subdirectory of your phpbb3 installation and name it something like 
 == Usage
 
 http://your_forum/webservice/index.xml.php
+http://your_forum/webservice/search.xml.php?search_id=egosearch
+http://your_forum/webservice/search.xml.php?search_id=newposts
 
-(Currently only this one is supported)
+(Currently only these are supported)
 
 == Features
 
 * Using whole phpbb3 backend (together with logged user's access and authorization)
-* Aiming for RESTful (or at least similar) paths
+* Aiming for nice and self-explanatory (or at least similar) paths
 
 == TODO
 
