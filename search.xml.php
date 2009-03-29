@@ -932,6 +932,8 @@ if ($keywords || $author || $author_id || $search_id || $submit)
 		'body' => 'search.xml')
 	);
   
+  $template->assign_var('XML_HEADER', "<?xml version='1.0' encoding='UTF-8' ?" . ">\n");
+  
   header('Pragma: no-cache');
   header("Content-Type: application/xml; name=\"index.xml\"");
   
