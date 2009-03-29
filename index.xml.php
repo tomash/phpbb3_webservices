@@ -66,6 +66,8 @@ $template->assign_vars(array(
 	'U_MCP'				=> ($auth->acl_get('m_') || $auth->acl_getf_global('m_')) ? append_sid("{$phpbb_root_path}mcp.$phpEx", 'i=main&amp;mode=front', true, $user->session_id) : '')
 );
 
+
+
 $template->assign_var('XML_HEADER', "<?xml version='1.0' encoding='UTF-8' ?" . ">\n");
 
 // Output page
@@ -74,14 +76,12 @@ $template->assign_var('XML_HEADER', "<?xml version='1.0' encoding='UTF-8' ?" . "
 header('Pragma: no-cache');
 header("Content-Type: application/xml; name=\"index.xml\"");
 
-
-
-//echo "<?xml version='1.0' encoding='UTF-8' ?" . ">\n";
-
 $template->set_filenames(array(
 	'body' => 'index.xml')
 );
 
-page_footer();
+$template->display('body');
+garbage_collection();
+exit_handler();
 
 ?>

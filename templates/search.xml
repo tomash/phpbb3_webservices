@@ -1,0 +1,31 @@
+{XML_HEADER}
+
+<search_results>
+<!-- BEGIN searchresults -->
+  <thread>
+    <id>{searchresults.TOPIC_ID}</id>
+    <title>{searchresults.TOPIC_TITLE}</title>
+    <forum>
+      <id>{searchresults.FORUM_ID}</id>
+      <name>{searchresults.FORUM_TITLE}</name>
+    </forum>
+    <author>
+      <id>{searchresults.TOPIC_AUTHOR_ID}</id>
+      <login>{searchresults.TOPIC_AUTHOR}</login>
+    </author>
+    <counts>
+      <replies>{searchresults.TOPIC_REPLIES}</replies>
+      <views>{searchresults.TOPIC_VIEWS}</views>
+    </counts>
+    <last_post>
+      <id>{searchresults.LAST_POST_ID}</id>
+      <author>
+        <login>{searchresults.LAST_POST_AUTHOR}</login>
+      </author>
+      <time>{searchresults.LAST_POST_TIME}</time>
+    </last_post>
+  
+  </thread>
+
+<!-- END searchresults -->
+</search_results>
