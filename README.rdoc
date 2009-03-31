@@ -8,9 +8,9 @@ Put it in a subdirectory of your phpbb3 installation and name it something like 
 
 == Usage
 
-http://your_forum/webservice/index.xml.php
-http://your_forum/webservice/search.xml.php?search_id=egosearch
-http://your_forum/webservice/search.xml.php?search_id=newposts
+* http://your_forum/webservice/index.xml.php
+* http://your_forum/webservice/search.xml.php?search_id=egosearch
+* http://your_forum/webservice/search.xml.php?search_id=newposts
 
 (Currently only these are supported)
 
