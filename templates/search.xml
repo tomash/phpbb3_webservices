@@ -20,6 +20,7 @@
     <last_post>
       <id>{searchresults.LAST_POST_ID}</id>
       <author>
+        <id>{searchresults.LAST_POSTER_ID}</id>
         <login>{searchresults.LAST_POST_AUTHOR}</login>
       </author>
       <time>{searchresults.LAST_POST_TIME}</time>

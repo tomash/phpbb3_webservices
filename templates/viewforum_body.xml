@@ -16,6 +16,7 @@
     <last_post>
       <id>{topicrow.LAST_POST_ID}</id>
       <author>
+        <id>{topicrow.LAST_POSTER_ID}</id>
         <login>{topicrow.LAST_POST_AUTHOR}</login>
       </author>
       <time>{topicrow.LAST_POST_TIME}</time>
