@@ -2,7 +2,7 @@
 
 <search_results>
 <!-- BEGIN searchresults -->
-  <thread>
+  <topic>
     <id>{searchresults.TOPIC_ID}</id>
     <title>{searchresults.TOPIC_TITLE}</title>
     <forum>
@@ -25,7 +25,7 @@
       <time>{searchresults.LAST_POST_TIME}</time>
     </last_post>
   
-  </thread>
+  </topic>
 
 <!-- END searchresults -->
 </search_results>

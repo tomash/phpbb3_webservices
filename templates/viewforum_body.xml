@@ -1,0 +1,25 @@
+{XML_HEADER}
+
+<forum>
+<!-- BEGIN topicrow -->
+  <topic>
+    <id>{topicrow.TOPIC_ID}</id>
+    <title>{topicrow.TOPIC_TITLE}</title>
+    <author>
+      <id>{topicrow.TOPIC_AUTHOR_ID}</id>
+      <login>{topicrow.TOPIC_AUTHOR}</login>
+    </author>
+    <counts>
+      <replies>{topicrow.REPLIES}</replies>
+      <views>{topicrow.VIEWS}</views>
+    </counts>
+    <last_post>
+      <id>{topicrow.LAST_POST_ID}</id>
+      <author>
+        <login>{topicrow.LAST_POST_AUTHOR}</login>
+      </author>
+      <time>{topicrow.LAST_POST_TIME}</time>
+    </last_post>
+  </topic>
+<!-- END topicrow -->
+</forum>
