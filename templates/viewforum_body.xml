@@ -1,6 +1,14 @@
 {XML_HEADER}
 
 <forum>
+<!-- IF S_HAS_SUBFORUM -->
+	<!-- INCLUDE forumlist_body.xml -->
+<!-- ENDIF -->
+
+
+
+
+
 <!-- BEGIN topicrow -->
   <topic>
     <id>{topicrow.TOPIC_ID}</id>
